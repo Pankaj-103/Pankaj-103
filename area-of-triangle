@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+float area(int x,int y,int z){
+
+float s=(x+y+z)/2,ar;
+ar=sqrt(s*(s-x)*(s-y)*(s-z));
+return ar;
+}
+
+int main(){
+
+int a,b,c;
+
+clrscr();
+
+printf("enter the sides of triangle\n");
+scanf("%d\t%d\t%d",&a,&b,&c);
+printf("area of the triangle is %f \n",area(a,b,c));
+ getch();
+ return 0;
+
+
+ }
