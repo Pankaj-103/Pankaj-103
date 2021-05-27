@@ -1,0 +1,38 @@
+#include<stdio.h>
+void alpha(){
+    printf("entered aplhabet is a vowel\n");
+}
+int main()
+{
+    char a;
+    printf("enter the alphabet\n");
+    scanf("%c",&a);
+    switch(a)
+    {
+        case 'A':
+        case 'a':
+
+        case 'E':
+        case 'e':   
+
+       
+        case 'I':
+        case 'i':
+
+
+         case 'O':
+        case 'o': 
+
+
+         case 'U':
+        case 'u': {alpha();}
+
+        default: {
+                         printf("entered alphabet is a consonant");
+                    
+        }
+
+    }
+
+    return 0;
+}
