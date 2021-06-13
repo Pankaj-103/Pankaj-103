@@ -1,0 +1,22 @@
+//program to find the average of N numbers
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+
+int i,n;
+float avg,sum;
+clrscr();
+
+    printf("enter the value of n\n");
+    scanf("%d",&n);
+
+     sum=(n*n+n)/2;
+
+
+
+    avg=sum/n;
+	printf("average is %f\n",avg);
+    getch();
+    return 0;
+    }
