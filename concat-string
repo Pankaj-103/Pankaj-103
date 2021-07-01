@@ -1,0 +1,47 @@
+//program to concat two string
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main(){
+
+    char str1[50],str2[50],str3[50];
+    int i=0,j=0,length=0;
+    clrscr();
+
+    printf("enter first string\n");
+    gets(str1);
+    printf("enter second string\n");
+    gets(str2);
+    
+    
+    while(str1[i]!='\0'){
+
+        str3[j]=str1[i];
+        i++;
+        j++;
+
+    }
+    
+    i=0;
+    while(str2[i]!='\0'){
+        str3[j]=str2[i];
+        i++;
+        j++;
+    }
+
+    for(i=0;str3[i]!='\0';i++){
+        length++;
+    }
+
+    str3[i]='\n';
+
+    printf("\nlength of string is %d\n",length);
+    printf("\nconcatenated string is %s\n",str3);
+    
+    
+    
+    
+     getch();
+    return 0;
+
+    }
