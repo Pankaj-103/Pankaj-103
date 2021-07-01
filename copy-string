@@ -1,0 +1,30 @@
+//program to copy one string to another
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main(){
+
+ char str1[50],str2[50];
+ int length=0,i=0;
+ clrscr();
+ 
+ printf("enter the first string\n");
+ gets(str1);
+
+
+ while(str1[i]!='\0'){
+     str2[i]=str1[i];
+     i++;
+ }
+ str2[i]='\0';
+
+ printf("copied string is %s\n",str2);
+ for(i=0; str2[i]!='\0';i++){
+     length++;
+ }
+ printf("length of copied string is %d",length);
+
+    getch();
+    return 0;
+
+}
