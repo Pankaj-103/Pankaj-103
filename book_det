@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+struct book_details
+{
+    char title[30],author[40];
+    int price,pages,date
+    
+}s[3];
+
+
+int main()
+{  
+     int i,g;
+
+    for(i=0;i<3;i++){
+        printf("enter the title of the book\n");
+        getchar();
+        gets(s[i].title);
+        printf("enter the author\n");
+        getchar();
+        gets(s[i].author);
+        printf("enter the price\n");
+        scanf("%d",&s[i].price);
+        printf("enter the no. of pages \n");
+        scanf("%d",&s[i].pages);
+        printf("enter the date of publication\n");
+        scanf("%d",&s[i].date);
+    }
+
+    g=(s[0].price>s[1].price && s[0].price>s[2].price)?0:(s[1].price>s[0].price && s[1].price>s[2].price?1:2);
+    
+     printf(" title of the book is\n");
+        
+        puts(s[g].title);
+        printf("  author is\n");
+        
+        puts(s[g].author);
+        printf(" price is\n");
+        printf("%d",s[g].price);
+        printf(" no. of pages are\n");
+        printf("%d",s[g].pages);
+        printf(" date of publication is\n");
+        scanf("%d",s[g].date);
+
+return 0;
+}
