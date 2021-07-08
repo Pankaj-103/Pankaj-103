@@ -1,0 +1,93 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+#include<string.h>
+
+struct stud1
+{
+   int roll_no,tot_marks,fees;
+   char n[20],dept[30],s;
+   
+   
+} s1,s2; 
+
+
+int main()
+{ 
+ 
+ printf("\nenter the details of student 1");
+ printf("\nRoll no.:");  
+ scanf("%d",&s1.roll_no);
+ printf("\nName:");
+ getchar();  
+ gets(s1.n);
+ printf("\nSection:"); 
+ scanf("%c",&s1.s);
+ printf("\nDepartment:"); 
+ getchar();
+ gets(s1.dept);
+ printf("\nFees:");
+ scanf("%d",&s1.fees);
+ getchar();
+ printf("\nTotal Marks:"); 
+ scanf("%d",&s1.tot_marks);
+
+  printf("\n");
+
+ printf("\nenter the details of student 2");
+ printf("\nRoll no.:");  
+ scanf("%d",&s2.roll_no);
+ printf("\nName:");
+ getchar();  
+ gets(s2.n);
+ printf("\nSection:"); 
+ scanf("%c",&s2.s);
+ printf("\nDepartment:"); 
+ getchar();
+ gets(s2.dept);
+ printf("\nFees:");
+ scanf("%d",&s2.fees);
+ getchar();
+ printf("\nTotal Marks:"); 
+ scanf("%d",&s2.tot_marks);
+
+ if(s1.tot_marks>s2.tot_marks){
+
+     printf("\n details of student 1 are");
+ printf("\nRoll no.:");  
+ printf("%d",s1.roll_no);
+ printf("\nName:");
+   
+ puts(s1.n);
+ printf("\nSection:"); 
+ printf("%c",s1.s);
+ printf("\nDepartment:"); 
+ 
+ puts(s1.dept);
+ printf("\nFees:");
+ printf("%d",s1.fees);
+ 
+ printf("\nTotal Marks:"); 
+ printf("%d",s1.tot_marks);
+ }
+ else{
+   printf("\n details of student 2 are");
+ printf("\nRoll no.:");  
+ printf("%d",s2.roll_no);
+ printf("\nName:");
+   
+ puts(s2.n);
+ printf("\nSection:"); 
+ printf("%c",s2.s);
+ printf("\nDepartment:"); 
+ 
+ puts(s2.dept);
+ printf("\nFees:");
+ printf("%d",s2.fees);
+ 
+ printf("\nTotal Marks:"); 
+ printf("%d",s2.tot_marks);
+ }
+
+   return 0;
+}
